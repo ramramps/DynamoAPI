@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Dynamo">
+  
+  <title>ShutdownRequestedEventHandler - Dynamo</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "ShutdownRequestedEventHandler";
+    var mkdocs_page_url = "/Dynamo_UpdateManager/ShutdownRequestedEventHandler/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script>
+  <script src="../../js/DocJquery.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+   <div class="wy-side-nav-search">
+   <div style="white-space:nowrap">
+    <div  style="display:inline;">
+        <img src="/img/DynamoIcon.png/"/>
+    </div>   
+	</div>   
+        <div role="search" style="width:300px; float:left;">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+   </div>
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav"  id="menuNavigation">
+     
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="home ">
+        <a class="" href="../..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>API</span></li>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo/CustomNodeDefinition/">CustomNodeDefinition</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo/CustomNodeInfo/">CustomNodeInfo</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo/DefaultRenderPackage/">DefaultRenderPackage</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo/DefaultRenderPackageFactory/">DefaultRenderPackageFactory</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo/DynamoLogger/">DynamoLogger</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo/LogEventArgs/">LogEventArgs</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo/LogEventHandler/">LogEventHandler</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo/LogLevel/">LogLevel</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo/PreferenceSettings/">PreferenceSettings</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo/WarningLevel/">WarningLevel</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Annotations</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Annotations/NotifyPropertyChangedInvocatorAttribute/">NotifyPropertyChangedInvocatorAttribute</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Core</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Core/AuthenticationManager/">AuthenticationManager</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Core/Context/">Context</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Core/CrashPromptArgs/">CrashPromptArgs</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Core/CustomNodeManager/">CustomNodeManager</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Core/DebugSettings/">DebugSettings</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Core/IUndoRedoRecorderClient/">IUndoRedoRecorderClient</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Core/NodeGraph/">NodeGraph</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Core/NotificationObject/">NotificationObject</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Core.Threading</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Core_Threading/AsyncTask/">AsyncTask</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Core_Threading/AsyncTaskCompletedHandler/">AsyncTaskCompletedHandler</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Core_Threading/DelegateBasedAsyncTask/">DelegateBasedAsyncTask</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Core_Threading/Disposable/">Disposable</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Core_Threading/DynamoScheduler/">DynamoScheduler</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Core_Threading/IScheduler/">IScheduler</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Core_Threading/TaskStateChangedEventArgs/">TaskStateChangedEventArgs</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Core_Threading/TaskStateChangedEventHandler/">TaskStateChangedEventHandler</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Core_Threading/TimeStamp/">TimeStamp</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Engine</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Engine/AstBuilder/">AstBuilder</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Engine/AstBuiltEventHandler/">AstBuiltEventHandler</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Engine/CompilationServices/">CompilationServices</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Engine/EngineController/">EngineController</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Engine/FunctionDescriptor/">FunctionDescriptor</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Engine/FunctionDescriptorParams/">FunctionDescriptorParams</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Engine/FunctionGroup/">FunctionGroup</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Engine/FunctionType/">FunctionType</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Engine/IAstNodeContainer/">IAstNodeContainer</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Engine/IFunctionDescriptor/">IFunctionDescriptor</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Engine/ITraceReconciliationProcessor/">ITraceReconciliationProcessor</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Engine/LibraryServices/">LibraryServices</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Engine/LiveRunnerServices/">LiveRunnerServices</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Engine/TraceReconciliationEventArgs/">TraceReconciliationEventArgs</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Engine/XmlDocumentationExtensions/">XmlDocumentationExtensions</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Engine.NodeToCode</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Engine_NodeToCode/INamingProvider/">INamingProvider</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Extensions</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Extensions/EnumDescription/">EnumDescription</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Extensions/EnumDescriptionAttribute/">EnumDescriptionAttribute</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Extensions/ExtensionDefinition/">ExtensionDefinition</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Extensions/ExtensionLibraryLoader/">ExtensionLibraryLoader</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Extensions/ExtensionLoader/">ExtensionLoader</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Extensions/ExtensionManager/">ExtensionManager</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Extensions/IExtension/">IExtension</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Extensions/IExtensionLoader/">IExtensionLoader</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Extensions/IExtensionManager/">IExtensionManager</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Extensions/ReadyParams/">ReadyParams</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Extensions/StartupParams/">StartupParams</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Interfaces</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Interfaces/ICustomNodeManager/">ICustomNodeManager</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Interfaces/ICustomNodeSource/">ICustomNodeSource</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Interfaces/ICustomNodeWorkspaceModel/">ICustomNodeWorkspaceModel</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Interfaces/IDynamoModel/">IDynamoModel</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Interfaces/ILibraryLoader/">ILibraryLoader</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Interfaces/ILogger/">ILogger</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Interfaces/ILogMessage/">ILogMessage</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Interfaces/ILogSource/">ILogSource</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Interfaces/IPathManager/">IPathManager</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Interfaces/IPathResolver/">IPathResolver</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Interfaces/IPreferences/">IPreferences</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Interfaces/IRenderPackageFactory/">IRenderPackageFactory</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Interfaces/IRenderPackageSource/">IRenderPackageSource</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Interfaces/ISchedulerThread/">ISchedulerThread</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Interfaces/ISource/">ISource</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Interfaces/IWorkspaceModel/">IWorkspaceModel</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Library</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Library/TypedParameter/">TypedParameter</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Logging</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Logging/LogMessage/">LogMessage</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Logging/LogSourceBase/">LogSourceBase</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Migration</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Migration/MigrationManager/">MigrationManager</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Migration/NodeMigrationAttribute/">NodeMigrationAttribute</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Migration/NodeMigrationData/">NodeMigrationData</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Migration/PortId/">PortId</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Migration/WorkspaceMigrationAttribute/">WorkspaceMigrationAttribute</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Migration/WorkspaceMigrations/">WorkspaceMigrations</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Models</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/ActionHandler/">ActionHandler</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/AnnotationModel/">AnnotationModel</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/ConnectorModel/">ConnectorModel</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/ConnectorType/">ConnectorType</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/CustomNodeWorkspaceModel/">CustomNodeWorkspaceModel</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/DynamoModel/">DynamoModel</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/DynamoModelHandler/">DynamoModelHandler</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/ElementState/">ElementState</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/EvaluationCompletedEventArgs/">EvaluationCompletedEventArgs</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/HomeWorkspaceModel/">HomeWorkspaceModel</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/IEngineControllerManager/">IEngineControllerManager</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/ILocatable/">ILocatable</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/INodeFactory/">INodeFactory</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/INodeLoader/">INodeLoader</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/LacingStrategy/">LacingStrategy</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/ModelBase/">ModelBase</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/NodeEventHandler/">NodeEventHandler</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/NodeFactory/">NodeFactory</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/NodeHandler/">NodeHandler</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/NodeModel/">NodeModel</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/NodeModelAssemblyLoader/">NodeModelAssemblyLoader</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/NodeModelExtensions/">NodeModelExtensions</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/NoteModel/">NoteModel</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/PortData/">PortData</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/PortEventType/">PortEventType</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/PortModel/">PortModel</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/PortPosition/">PortPosition</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/PortsChangedHandler/">PortsChangedHandler</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/PortType/">PortType</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/PresetModel/">PresetModel</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/RunSettings/">RunSettings</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/RunType/">RunType</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/SaveContext/">SaveContext</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/ScopedNodeModel/">ScopedNodeModel</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/SnapExtensionEdges/">SnapExtensionEdges</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/TypeLoadData/">TypeLoadData</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/UIDispatcherEventArgs/">UIDispatcherEventArgs</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/UpdateValueParams/">UpdateValueParams</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/WorkspaceHandler/">WorkspaceHandler</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/WorkspaceInfo/">WorkspaceInfo</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Models/WorkspaceModel/">WorkspaceModel</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Nodes</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/AlsoKnownAsAttribute/">AlsoKnownAsAttribute</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/BuiltinNodeCategories/">BuiltinNodeCategories</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/CodeBlockNodeModel/">CodeBlockNodeModel</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/CodeBlockUtils/">CodeBlockUtils</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/CustomNodeController/">CustomNodeController</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/DoNotLoadOnPlatformsAttribute/">DoNotLoadOnPlatformsAttribute</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/DSFunction/">DSFunction</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/DSFunctionBase/">DSFunctionBase</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/DSVarArgFunction/">DSVarArgFunction</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/DummyNode/">DummyNode</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/Function/">Function</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/FunctionCallBase/">FunctionCallBase</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/FunctionCallNodeController/">FunctionCallNodeController</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/IsDesignScriptCompatibleAttribute/">IsDesignScriptCompatibleAttribute</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/IsInteractiveAttribute/">IsInteractiveAttribute</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/IsMetaNodeAttribute/">IsMetaNodeAttribute</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/NodeCategoryAttribute/">NodeCategoryAttribute</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/NodeDeprecatedAttribute/">NodeDeprecatedAttribute</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/NodeDescriptionAttribute/">NodeDescriptionAttribute</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/NodeNameAttribute/">NodeNameAttribute</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/NodeObsoleteAttribute/">NodeObsoleteAttribute</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/NodeSearchableAttribute/">NodeSearchableAttribute</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/NodeSearchTagsAttribute/">NodeSearchTagsAttribute</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/NodeTypeIdAttribute/">NodeTypeIdAttribute</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/NotSearchableInCustomNodeWorkspace/">NotSearchableInCustomNodeWorkspace</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/NotSearchableInHomeWorkspace/">NotSearchableInHomeWorkspace</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/Output/">Output</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/Statement/">Statement</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/Symbol/">Symbol</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/UnresolvedFunctionException/">UnresolvedFunctionException</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/Utilities/">Utilities</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/Variable/">Variable</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/VariableInputNode/">VariableInputNode</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/VariableInputNodeController/">VariableInputNodeController</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/ZeroTouchNodeController/">ZeroTouchNodeController</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Nodes/ZeroTouchVarArgNodeController/">ZeroTouchVarArgNodeController</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Properties</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Properties/Resources/">Resources</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Search</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search/BrowserInternalElement/">BrowserInternalElement</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search/BrowserItem/">BrowserItem</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search/ElementTypes/">ElementTypes</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search/NodeSearchModel/">NodeSearchModel</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search/SearchCategoryUtil/">SearchCategoryUtil</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search/SearchDictionary/">SearchDictionary</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search/SearchElementGroup/">SearchElementGroup</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search/SearchLibrary/">SearchLibrary</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Search.Interfaces</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search_Interfaces/ISearchCategory/">ISearchCategory</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search_Interfaces/ISearchEntry/">ISearchEntry</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Search.SearchElements</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search_SearchElements/CodeBlockNodeSearchElement/">CodeBlockNodeSearchElement</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search_SearchElements/CustomNodeSearchElement/">CustomNodeSearchElement</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search_SearchElements/DragDropNodeSearchElementInfo/">DragDropNodeSearchElementInfo</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search_SearchElements/NodeModelSearchElement/">NodeModelSearchElement</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search_SearchElements/NodeModelSearchElementBase/">NodeModelSearchElementBase</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search_SearchElements/NodeSearchElement/">NodeSearchElement</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search_SearchElements/SearchElementBase/">SearchElementBase</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Search_SearchElements/ZeroTouchSearchElement/">ZeroTouchSearchElement</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.Selection</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_Selection/ISelectable/">ISelectable</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.UI</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../../Dynamo_UI/Configurations/">Configurations</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+            
+    <ul class="subnav">
+    <li><span>Dynamo.UpdateManager</span></li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../AppVersionInfo/">AppVersionInfo</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../BinaryVersion/">BinaryVersion</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../IAppVersionInfo/">IAppVersionInfo</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../IAsynchronousRequest/">IAsynchronousRequest</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../IDynamoLookUp/">IDynamoLookUp</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../IUpdateManager/">IUpdateManager</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../IUpdateManagerConfiguration/">IUpdateManagerConfiguration</a>
+        
+    </li>
+
+        
+            
+    <li class="home current">
+        <a class="current" href="./">ShutdownRequestedEventHandler</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#shutdownrequestedeventhandler">ShutdownRequestedEventHandler</a></li>
+                
+                    <li><a class="toctree-l4" href="#constructors">Constructors</a></li>
+                
+                    <li><a class="toctree-l4" href="#methods">Methods</a></li>
+                
+                    <li><a class="toctree-l4" href="#properties">Properties</a></li>
+                
+                    <li><a class="toctree-l4" href="#events">Events</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../UpdateDownloadedEventArgs/">UpdateDownloadedEventArgs</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../UpdateDownloadedEventHandler/">UpdateDownloadedEventHandler</a>
+        
+    </li>
+
+        
+            
+    <li class="home ">
+        <a class="" href="../UpdateManagerConfiguration/">UpdateManagerConfiguration</a>
+        
+    </li>
+
+        
+    </ul>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Dynamo</a>
+      </nav>
+
+      
+      <div id = "navigationContent" class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Dynamo.UpdateManager &raquo;</li>
+        
+      
+    
+    <li>ShutdownRequestedEventHandler</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="shutdownrequestedeventhandler">ShutdownRequestedEventHandler</h1>
+<hr />
+<h2 id="constructors">Constructors</h2>
+<hr />
+<h2 id="methods">Methods</h2>
+<hr />
+<h2 id="properties">Properties</h2>
+<hr />
+<h2 id="events">Events</h2>
+<h4 id="no-public-events-defined">No public events defined</h4>
+<hr />
+              
+            </div>
+          </div>	 
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+</body>
+</html>
