@@ -42,5 +42,7 @@ $(document).ready(function(){
 			}		
 		});
 	});
+	
+	$("#menuNavigation").height($(document).height());
 });
 
