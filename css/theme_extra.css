@@ -177,11 +177,8 @@ code.cs, code.c {
 	background: none
 }
 
-.wy-page-title {
- position : absolute
- top:3%;
- left:50%;
- 
+.wy-page-title { 
+ left:50%; 
 }
 
 .rst-content table.docutils {
