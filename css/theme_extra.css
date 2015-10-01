@@ -307,7 +307,7 @@ code.cs, code.c {
 nav.stickynav {
     background-color:white;
 }
-li.toctree-l1 a:hover{
+li.home a:hover{
 	background-color: #939598;
 	color:white;
 }
