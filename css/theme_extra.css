@@ -52,7 +52,7 @@ b, strong {
 .wy-side-nav-search {
     background: #000000;
     text-align: left;
-    display: flex;
+    display: block;
     height:70px
 }
 
