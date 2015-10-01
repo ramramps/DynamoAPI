@@ -1612,12 +1612,11 @@
 <p>Manages instantiation of custom nodes. All custom nodes known to Dynamo should be stored with this type. This object implements late initialization of custom nodes by providing a single interface to initialize custom nodes. </p>
 <hr />
 <h2 id="constructors">Constructors</h2>
-<hr />
 <h2 id="methods">Methods</h2>
 <table>
 <thead>
 <tr>
-<th><strong><a href="http://dynamods.github.io/DynamoAPI/Dynamo_Models/CustomNodeWorkspaceModel">CustomNodeWorkspaceModel</a></strong> <strong>&nbsp;&nbsp;GetWorkspaceById(<em>Guid</em> customNodeId)</strong></th>
+<th><em><a href="http://dynamods.github.io/DynamoAPI/Dynamo_Models/CustomNodeWorkspaceModel">CustomNodeWorkspaceModel</a></em> <strong>&nbsp;&nbsp;GetWorkspaceById(<em>Guid</em> customNodeId)</strong></th>
 <th>stability index:1</th>
 </tr>
 </thead>
@@ -1643,7 +1642,7 @@
 <table>
 <thead>
 <tr>
-<th><strong><a href="http://dynamods.github.io/DynamoAPI/Dynamo_Nodes/Function">Function</a></strong> <strong>&nbsp;&nbsp;CreateCustomNodeInstance(<em>Guid</em> id,<em>String</em> nickname,<em>Boolean</em> isTestMode)</strong></th>
+<th><em><a href="http://dynamods.github.io/DynamoAPI/Dynamo_Nodes/Function">Function</a></em> <strong>&nbsp;&nbsp;CreateCustomNodeInstance(<em>Guid</em> id,<em>String</em> nickname,<em>Boolean</em> isTestMode)</strong></th>
 <th>stability index:1</th>
 </tr>
 </thead>
@@ -1763,7 +1762,7 @@
 <table>
 <thead>
 <tr>
-<th><strong>[2734, Culture=neutral, PublicKeyToken=null]]](http://dynamods.github.io/DynamoAPI/System_Collections_Generic_IEnumerable`1[[Dynamo_CustomNodeInfo, DynamoCore, Version=0_9_0/2734, Culture=neutral, PublicKeyToken=null]])</strong> <strong>&nbsp;&nbsp;AddUninitializedCustomNodesInPath(<em>String</em> path,<em>Boolean</em> isTestMode,<em>Boolean</em> isPackageMember)</strong></th>
+<th><em>IEnumerable&lt;</em><a href="http://dynamods.github.io/DynamoAPI/Dynamo/CustomNodeInfo">CustomNodeInfo</a><em>&gt;</em> <strong>&nbsp;&nbsp;AddUninitializedCustomNodesInPath(<em>String</em> path,<em>Boolean</em> isTestMode,<em>Boolean</em> isPackageMember)</strong></th>
 <th>stability index:1</th>
 </tr>
 </thead>
@@ -1906,12 +1905,11 @@
 </tr>
 </tbody>
 </table>
-<hr />
 <h2 id="properties">Properties</h2>
 <table>
 <thead>
 <tr>
-<th><em>IEnumerable&lt;</em>CustomNodeDefinition<em>&gt;</em> <strong>&nbsp;&nbsp;LoadedDefinitions {get;}</strong></th>
+<th><em>IEnumerable&lt;</em><a href="http://dynamods.github.io/DynamoAPI/Dynamo/CustomNodeDefinition">CustomNodeDefinition</a><em>&gt;</em> <strong>&nbsp;&nbsp;LoadedDefinitions {get;}</strong></th>
 <th>stability index:1</th>
 </tr>
 </thead>
@@ -1925,7 +1923,7 @@
 <table>
 <thead>
 <tr>
-<th><em>IEnumerable&lt;</em>CustomNodeWorkspaceModel<em>&gt;</em> <strong>&nbsp;&nbsp;LoadedWorkspaces {get;}</strong></th>
+<th><em>IEnumerable&lt;</em><a href="http://dynamods.github.io/DynamoAPI/Dynamo_Models/CustomNodeWorkspaceModel">CustomNodeWorkspaceModel</a><em>&gt;</em> <strong>&nbsp;&nbsp;LoadedWorkspaces {get;}</strong></th>
 <th>stability index:1</th>
 </tr>
 </thead>
@@ -1936,7 +1934,6 @@
 </tr>
 </tbody>
 </table>
-<hr />
 <h2 id="events">Events</h2>
 <table>
 <thead>
@@ -1980,7 +1977,6 @@
 </tr>
 </tbody>
 </table>
-<hr />
               
             </div>
           </div>	 
