@@ -332,13 +332,11 @@ li.home a:hover{
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
  .wy-page-title { 
-	font-size:15px;	 
-	left:50%;
-    position:absolute;	
+	 visibility : hidden
 	}
-	
-  .wy-side-search {
-	width:100px;
-	float:left;
-}
+	 
+   .fa fa-bars {
+     float:right;
+   }
+   
 }
