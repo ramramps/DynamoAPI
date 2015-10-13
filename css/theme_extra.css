@@ -178,7 +178,9 @@ code.cs, code.c {
 	background: none
 }
 
-.wy-page-title { 
+.wy-page-title {
+ font-size:30px;
+ position:absolute 
  left:45%; 
 }
 
