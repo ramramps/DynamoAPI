@@ -340,7 +340,7 @@ and (max-device-width : 480px) {
 	}
 	 
    .wy-nav-top i {
-     float:right;
+     float:left;
    }
    
    .wy-side-search {
