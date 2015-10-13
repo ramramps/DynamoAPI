@@ -328,8 +328,7 @@ li.home a:hover{
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
  .wy-page-title { 
-	font-size:10px;
-	position:absolute;
+	font-size:10px;	 
 	left:45%; 
 	}
 }
