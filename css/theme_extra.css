@@ -178,7 +178,7 @@ code.cs, code.c {
 	background: none
 }
 
-.wy-page-title {
+.wy-page-title { 
  font-size:30px;
  position:absolute;
  left:45%; 
@@ -322,4 +322,14 @@ nav.stickynav {
 li.home a:hover{
 	background-color: #939598;
 	color:white;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+ .wy-page-title { 
+	font-size:10px;
+	position:absolute;
+	left:45%; 
+	}
 }
