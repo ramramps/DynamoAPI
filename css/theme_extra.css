@@ -334,6 +334,10 @@ and (max-device-width : 480px) {
  .wy-page-title { 
 	 visibility : hidden
 	}
+	
+	.wy-nav-top {
+	 line-height:0px
+	}
 	 
    .wy-nav-top i {
      float:right;
