@@ -343,4 +343,8 @@ and (max-device-width : 480px) {
      float:right;
    }
    
+   .wy-side-search {
+     width:auto
+   }
+   
 }
