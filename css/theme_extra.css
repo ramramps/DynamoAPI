@@ -335,7 +335,7 @@ and (max-device-width : 480px) {
 	 visibility : hidden
 	}
 	 
-   .fa fa-bars {
+   .wy-nav-top i {
      float:right;
    }
    
