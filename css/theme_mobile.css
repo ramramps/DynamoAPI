@@ -4,9 +4,7 @@
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 /* Styles */
-.wy-page-title { 
-	 visibility : hidden
-	}
+ 
 	
 	.wy-nav-top {
 	 line-height:20px
@@ -26,9 +24,7 @@ and (max-device-width : 480px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 /* Styles */
-.wy-page-title { 
-	 visibility : hidden
-	}
+ 
 	
 	.wy-nav-top {
 	 line-height:20px
@@ -49,10 +45,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
 /* Styles */
-.wy-page-title { 
-	 visibility : hidden
-	}
-	
+ 
 	.wy-nav-top {
 	 line-height:20px
 	}
@@ -72,10 +65,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
 /* Styles */
-.wy-page-title { 
-	 visibility : hidden
-	}
-	
+ 
 	.wy-nav-top {
 	 line-height:20px
 	}
