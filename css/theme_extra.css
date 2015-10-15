@@ -326,25 +326,4 @@ li.home a:hover{
 .wy-side-search {
 	width:300px;
 	float:left;
-}
-
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
- .wy-page-title { 
-	 visibility : hidden
-	}
-	
-	.wy-nav-top {
-	 line-height:20px
-	}
-	 
-   .wy-nav-top i {
-     float:left;
-   }
-   
-   .wy-side-search {
-     width:auto
-   }
-   
-}
+} 
