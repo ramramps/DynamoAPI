@@ -49,14 +49,13 @@ and (min-device-width : 375px)
 and (max-device-width : 667px) 
 and (orientation : landscape){
 /* Styles */
-.wy-nav-top {
+  .wy-page-title {
+    visibility:hidden
+  }
+  .wy-nav-top {
 	 line-height:20px
 	}
 	
-	.wy-nav-top a {
-     visibility:collapse
-   }
-	 
    .wy-nav-top i {
      float:left;
    }
