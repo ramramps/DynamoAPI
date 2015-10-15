@@ -48,17 +48,26 @@ and (orientation : landscape) {
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {
 /* Styles */
-.wy-page-title { 
-	 visibility : hidden
-	}
-	
-	.wy-nav-top {
+.wy-nav-top {
 	 line-height:20px
 	}
+	
+	.wy-nav-top a {
+     visibility:collapse
+   }
 	 
    .wy-nav-top i {
      float:left;
    }
+	 	
+    .wy-page-title {
+	  font-size : 15px;
+	  position : absolute;
+	  left:45%;
+	  font-weight:bold;
+	  color:#fff;
+	  padding:0.809em
+	}
    
    .wy-side-search {
      width:auto
