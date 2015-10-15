@@ -26,17 +26,18 @@ and (max-device-width : 480px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 /* Styles */
-.wy-page-title { 
-	 visibility : hidden
+	.wy-nav-top {
+	  visibility : hidden
 	}
 	
-	.wy-nav-top {
-	 line-height:20px
+    .wy-page-title {
+	  font-size : 15px;
+	  position : absolute;
+	  left:45%;
+	  font-weight:bold;
+	  color:#fff;
+	  padding:0.809em
 	}
-	 
-   .wy-nav-top i {
-     float:left;
-   }
    
    .wy-side-search {
      width:auto
@@ -49,17 +50,18 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
 /* Styles */
-.wy-page-title { 
-	 visibility : hidden
+.wy-nav-top {
+	  visibility : hidden
 	}
 	
-	.wy-nav-top {
-	 line-height:20px
+    .wy-page-title {
+	  font-size : 15px;
+	  position : absolute;
+	  left:45%;
+	  font-weight:bold;
+	  color:#fff;
+	  padding:0.809em
 	}
-	 
-   .wy-nav-top i {
-     float:left;
-   }
    
    .wy-side-search {
      width:auto
