@@ -74,6 +74,36 @@ and (orientation : landscape){
    }
 }
 
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape){
+/* Styles */
+  .wy-page-title {
+    visibility:hidden
+  }
+  .wy-nav-top {
+	 line-height:20px
+	}
+	
+   .wy-nav-top i {
+     float:left;
+   }
+	 	
+    .wy-page-title {
+	  font-size : 15px;
+	  position : absolute;
+	  left:45%;
+	  font-weight:bold;
+	  color:#fff;
+	  padding:0.809em
+	}
+   
+   .wy-side-search {
+     width:auto
+   }
+}
+
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
