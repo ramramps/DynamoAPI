@@ -50,8 +50,6 @@ b, strong {
 }
 
 .wy-side-nav-search {
-    color: #BBB;
-    margin-bottom:0px;
     background: #000000;
     text-align: left;
     display: block;
@@ -181,10 +179,7 @@ code.cs, code.c {
 }
 
 .wy-page-title { 
- font-size:30px;
- position:absolute;
  left:45%; 
- color:#fff;
 }
 
 .rst-content table.docutils {
@@ -299,7 +294,10 @@ code.cs, code.c {
     font-size: 90%;
     color: #838383;
 }
-
+.wy-side-nav-search {
+    color: #BBB;
+    margin-bottom:0px;
+}
 .wy-side-nav-search form {
     position: relative;
     top: 30%;
@@ -319,18 +317,7 @@ code.cs, code.c {
 nav.stickynav {
     background-color:white;
 }
- 
-li.home a:not(.current):hover{
+li.home a:hover{
 	background-color: #939598;
 	color:white;
 }
-
-li.current a.current:hover{
-background-color: #666666!important;
-color:white;
-}
-
-.wy-side-search {
-	width:300px;
-	float:left;
-} 
