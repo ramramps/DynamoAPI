@@ -48,8 +48,20 @@ $(document).ready(function(){
 	});
 	
 	$("#menuNavigation").height($(document).height());
-	$("#page-title").show();
-	$("#nav-wy-top").show().trigger('change' function(event){
+	$("#page-title").on('show', function() {
+		$("#nav-wy-top").hide();
+	});
+	$("#nav-wy-top").on('show', function() {
 		$("#page-title").hide();
 	});
 });
+
+(function ($) {
+      $.each(['show', 'hide'], function (i, ev) {
+        var el = $.fn[ev];
+        $.fn[ev] = function () {
+          this.trigger(ev);
+          return el.apply(this, arguments);
+        };
+      });
+    })(jQuery);
