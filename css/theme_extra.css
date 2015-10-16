@@ -333,9 +333,3 @@ color:white;
 	width:300px;
 	float:left;
 } 
-
-.wy-nav-top :: after {
-  .wy-page-title { 
-	 visibility : hidden
-	}
-}
