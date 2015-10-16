@@ -49,7 +49,7 @@ $(document).ready(function(){
 	
 	$("#menuNavigation").height($(document).height());
 	$("#page-title").show();
-	$("#nav-wy-top:visible").livequery(function() {
+	$("#nav-wy-top").show().trigger('change' function(event){
 		$("#page-title").hide();
 	});
 });
