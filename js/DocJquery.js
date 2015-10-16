@@ -48,4 +48,8 @@ $(document).ready(function(){
 	});
 	
 	$("#menuNavigation").height($(document).height());
+	$("#page-title").show();
+	$("#nav-wy-top:visible").livequery(function() {
+		$("#page-title").hide();
+	});
 });

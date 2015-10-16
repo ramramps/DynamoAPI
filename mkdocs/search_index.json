@@ -4117,7 +4117,7 @@
         }, 
         {
             "location": "/Dynamo_Nodes/FunctionCallNodeController/", 
-            "text": "FunctionCallNodeController\n\n\nController for nodes that act as function calls. \n\n\n\n\nConstructors\n\n\nNo public constructors defined\n\n\nMethods\n\n\nNo public methods defined\n\n\nProperties\n\n\n\n\n\n\n\n\nT\n \nDefinition {get;set;}\n\n\nstability index:1\n\n\n\n\n\n\n\n\n\n\nA FunctionDescriptor describing the function that this controller will call.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nString\n \nNickName {get;}\n\n\nstability index:1\n\n\n\n\n\n\n\n\n\n\nNickName for nodes using this controller, based on the underlying FunctionDescriptor.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIEnumerable\nString\n \nReturnKeys {get;}\n\n\nstability index:1\n\n\n\n\n\n\n\n\n\n\nReturnKeys for multi-output functions.\n\n\n\n\n\n\n\n\n\n\nEvents\n\n\nNo public events defined", 
+            "text": "FunctionCallNodeController\n\n\nController for nodes that act as function calls. \n\n\n\n\nConstructors\n\n\nNo public constructors defined\n\n\nMethods\n\n\nNo public methods defined\n\n\nProperties\n\n\n\n\n\n\n\n\nT\n \nDefinition {get;set;}\n\n\nstability index:1\n\n\n\n\n\n\n\n\n\n\nA FunctionDescriptor describing the function that this controller will call.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nString\n \nNickName {get;}\n\n\nstability index:1\n\n\n\n\n\n\n\n\n\n\nNickName for nodes using this controller, based on the underlying FunctionDescriptor.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIEnumerable\nString\n \nReturnKeys {get;}\n\n\nstability index:1\n\n\n\n\n\n\n\n\n\n\nReturnKeys for multi-output functions.\n\n\n\n\n\n\n\n\n\n\nEvents\n\n\n\n\n\n\n\n\n \nSyncWithDefinitionStart**\n\n\nstability index:1\n\n\n\n\n\n\n\n\n\n\nEvent handler for the event when node starts syncing with its definition.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \nSyncWithDefinitionEnd**\n\n\nstability index:1\n\n\n\n\n\n\n\n\n\n\nEvent handler for the event when node finishes syncing with its definition.", 
             "title": "FunctionCallNodeController"
         }, 
         {
@@ -4142,7 +4142,7 @@
         }, 
         {
             "location": "/Dynamo_Nodes/FunctionCallNodeController/#events", 
-            "text": "No public events defined", 
+            "text": "SyncWithDefinitionStart**  stability index:1      Event handler for the event when node starts syncing with its definition.           SyncWithDefinitionEnd**  stability index:1      Event handler for the event when node finishes syncing with its definition.", 
             "title": "Events"
         }, 
         {
