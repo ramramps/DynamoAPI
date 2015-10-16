@@ -2,6 +2,17 @@
 .wy-page-title { 
 	 visibility : hidden
 	}
+	.wy-nav-top {
+	 line-height:20px
+	}
+	 
+   .wy-nav-top i {
+     float:left;
+   }
+   
+   .wy-side-search {
+     width:auto
+   }
 }
 
 /* Smartphones */
